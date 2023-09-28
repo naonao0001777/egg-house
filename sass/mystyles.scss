@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// If need, change your variables before importing Bulma
+$title-color: black;
+
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$card-width: 60rem;
+$card-content-height: 30rem;
+$card-radius: 1.0rem;
+$card-header-height: 4rem;
+$title-size: 5rem;
+$button-background-color: none;
+$button-border-color: none;
+$button-ghost-color: none;
+$button-focus-border-color: none;
+$button-text-color: $primary;
+$button-focus-box-shadow-color: none;
+$button-focus-color: none;
+$button-focus-border-color: none;
+$button-focus-box-shadow-size: none;
+$button-focus-box-shadow-color: none;
+$button-text-hover-background-color: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/components/card.sass";

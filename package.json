@@ -8,25 +8,35 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "npm run css-watch",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "css-build": "node-sass --omit-source-map-url ./sass/mystyles.scss ./css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch"
   },
   "dependencies": {
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-sass": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-icons": "^4.11.0",
+    "react-modal": "^3.16.1",
+    "sass": "^1.68.0"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/react-modal": "^3.16.1",
+    "bulma": "^0.9.4",
+    "node-sass": "^8.0.0",
     "typescript": "^5.1.6"
   }
 }
